@@ -8,7 +8,7 @@ def index(request):
   template = loader.get_template('index.html')
   context = {
     'mymembers': mymembers,
-  }
+  } 
   return HttpResponse(template.render(context, request))
 
 def add(request):
